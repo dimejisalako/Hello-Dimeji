@@ -1,0 +1,44 @@
+
+body {
+    font-family: "Galdeano", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f9f9f9;
+  }
+  
+  .galdeano-regular {
+    font-family: "Galdeano", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  
+  /* Animated color transition */
+  #welcome {
+    font-size: 5rem;
+    font-weight: bold;
+    animation: colorShift 5s infinite alternate;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Greeting style */
+  #greeting {
+    font-size: 2rem;
+    color: #333;
+    text-align: center;
+  }
+  
+  /* Keyframe for color animation */
+  @keyframes colorShift {
+    0% { color: #ff4b5c; }
+    25% { color: #ffb400; }
+    50% { color: #4caf50; }
+    75% { color: #2196f3; }
+    100% { color: #9c27b0; }
+  }
+  
