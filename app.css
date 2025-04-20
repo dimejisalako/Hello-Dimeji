@@ -1,4 +1,4 @@
-
+/* Global styles */
 body {
     font-family: "Galdeano", sans-serif;
     display: flex;
@@ -7,33 +7,25 @@ body {
     justify-content: center;
     height: 100vh;
     margin: 0;
-    background-color: #f9f9f9;
-  }
-  
-  .galdeano-regular {
-    font-family: "Galdeano", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  
-  /* Animated color transition */
-  #welcome {
-    font-size: 5rem;
-    font-weight: bold;
-    animation: colorShift 5s infinite alternate;
+    background-color: #fff;
     text-align: center;
+  }
+  
+  /* Really bold welcome text + animation */
+  #welcome {
+    font-size: 3.5rem;
+    text-shadow: 2px 2px 0 #000, -2px -2px 0 #000;
+    animation: colorShift 4s infinite linear;
     margin-bottom: 20px;
   }
   
-  /* Greeting style */
+  /* Greeting text */
   #greeting {
     font-size: 2rem;
     color: #333;
-    text-align: center;
   }
   
-  /* Keyframe for color animation */
+  /* Keyframes for color shift animation */
   @keyframes colorShift {
     0% { color: #ff4b5c; }
     25% { color: #ffb400; }
